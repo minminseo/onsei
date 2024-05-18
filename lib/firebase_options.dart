@@ -72,4 +72,5 @@ class DefaultFirebaseOptions {
     storageBucket: 'onsei-6d842.appspot.com',
     iosBundleId: 'com.example.onsei',
   );
+
 }
