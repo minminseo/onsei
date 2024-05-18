@@ -38,7 +38,9 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 0;
 
-// ここに機能を追加していく？？？
+  static const List<String> _titles = ['アルバム', '追加', '管理者設定'];
+
+// ここに機能追加していく？？
   static const List<Widget> _widgetOptions = <Widget>[
     Text('ここにアップロードした写真を新しい順で横3枚で縦に並べていく'),
     Text('追加の画面'),
@@ -56,7 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
+        title: Text(_titles[_selectedIndex]),
       ),
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
@@ -65,15 +67,15 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.photo_album), // アイコン（photo_albumは仮です）正直これでもいい
+            icon: Icon(Icons.photo_album),// アイコン（photo_albumは仮です）正直これでもいい
             label: 'アルバム',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.add), // アイコン（addは仮です）正直これでもいい
+            icon: Icon(Icons.add),// アイコン（addは仮です）正直これでもいい
             label: '追加',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.settings), // アイコン（settingは仮です）正直これでもいい
+            icon: Icon(Icons.settings),// アイコン（settingsは仮です）正直これでもいい
             label: '管理者設定',
           ),
         ],
