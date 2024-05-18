@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "185553844307",
+    "project_id": "onsei-6d842",
+    "storage_bucket": "onsei-6d842.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:185553844307:android:659998bc1808064479aea6",
+        "android_client_info": {
+          "package_name": "com.onsei.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvAwjsOJA7kmW4Zbv7Fdjkwa4xX3Nftrw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
